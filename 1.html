@@ -61,9 +61,11 @@ URL, HTTP, WWW의 전신인 Enquire 등도 그가 세트로 개발하고 제안�
 TCP/IP 통신규약을 만든 빈턴 G. 서프(Vinton Gray Cerf)와 함께 인터넷의 아버지로 불린다.
 나무위키에서는 다음과 같이 내용을 집어넣어 HTML을 적용시킬 수 있지만
 도움말에 의하면 지원 종료 가능성이 있는 비권장 문법이므로
-나무위키에서는 HTML 태그를 사용하지 않는 것을 추천한다.<br>
+나무위키에서는 HTML 태그를 사용하지 않는 것을 추천한다.<br><br>
 
-<button onclick="myFunction()">Click Me!</button>
+<button onclick="myFunction()">Click Me!</button><br><br>
+
+<input type="checkbox">
 
 <!DOCTYPE html>
 <html>
@@ -72,6 +74,30 @@ TCP/IP 통신규약을 만든 빈턴 G. 서프(Vinton Gray Cerf)와 함께 인�
 
 <h1>This is a heading</h1>
 <p>This is a paragraph.</p>
+
+<p>
+
+  <div id="disqus_thread"></div>
+  <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://web1-gdit8cll8l.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</p>
 
 </body>
 </html>
